@@ -6,8 +6,9 @@ package com.example.greenglobal.greenhousemonitor;
 
 import org.androidannotations.rest.spring.annotations.Accept;
 import org.junit.Test;
-
 import static junit.framework.Assert.*;
+
+//some unit tests
 
 public class UnitTest {
 
