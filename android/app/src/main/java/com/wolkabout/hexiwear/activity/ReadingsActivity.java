@@ -222,15 +222,19 @@ public class ReadingsActivity extends AppCompatActivity implements ServiceConnec
 
         switch (characteristic) {
             case BATTERY:
+                someReading.setText(data.toString());
                 firebaseReference.setValue(data.toString());
                 break;
             case TEMPERATURE:
+                someReading.setText(data.toString());
                 firebaseReference.setValue(data.toString());
                 break;
             case HUMIDITY:
+                someReading.setText(data.toString());
                 firebaseReference.setValue(data.toString());
                 break;
             case PRESSURE:
+                someReading.setText(data.toString());
                 firebaseReference.setValue(data.toString());
                 break;
             case HEARTRATE:
@@ -239,12 +243,15 @@ public class ReadingsActivity extends AppCompatActivity implements ServiceConnec
                 firebaseReference.setValue(data.toString());
                 break;
             case LIGHT:
+                someReading.setText(data.toString());
                 firebaseReference.setValue(data.toString());
                 break;
             case STEPS:
+                someReading.setText(data.toString());
                 firebaseReference.setValue(data.toString());
                 break;
             case CALORIES:
+                someReading.setText(data.toString());
                 firebaseReference.setValue(data.toString());
                 break;
             case ACCELERATION:
@@ -253,10 +260,12 @@ public class ReadingsActivity extends AppCompatActivity implements ServiceConnec
                 break;
             case MAGNET:
                 final String[] magnetReadings = data.split(";");
+                someReading.setText(data.toString());
                 firebaseReference.setValue(data.toString());
                 break;
             case GYRO:
                 final String[] gyroscopeReadings = data.split(";");
+                someReading.setText(data.toString());
                 firebaseReference.setValue(data.toString());
                 break;
             default:
